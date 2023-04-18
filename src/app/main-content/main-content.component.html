@@ -1,0 +1,5 @@
+<p>main-content works! {{ breakpoint }}</p>
+<mat-grid-list [cols]="breakpoint" rowHeight="100%" (window:resize)="onResize($event)">
+  <mat-grid-tile [colspan]="2">1</mat-grid-tile>
+  <mat-grid-tile>2</mat-grid-tile>
+</mat-grid-list>
